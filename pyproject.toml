@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "web-front"
+version = "0.1.0"
+description = ""
+authors = ["aoki0430 <pankun0714@gmail.com>"]
+readme = "README.md"
+packages = [{include = "web_front"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+streamlit = "^1.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.7.0"
+flake8 = "^6.0.0"
+pip-audit = "^2.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
